@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo 'Checking out code...'
+                git 'https://github.com/sivaakamall14/LibraryApp.git'
             }
         }
 
