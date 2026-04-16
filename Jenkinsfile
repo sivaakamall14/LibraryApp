@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/sivaakamall14/LibraryApp.git'
-            }
-        }
-
         stage('Build Java') {
             steps {
                 bat 'javac src/*.java'
